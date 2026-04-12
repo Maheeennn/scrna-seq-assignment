@@ -59,9 +59,11 @@ produce a high-quality count matrix ready for downstream analysis.
 
 ---
 
-### Barcode Knee Plot Observations
+### Barcode Rank (Knee) Plot
 
-From the barcode rank plot (`DropletUtils_Plot.png`):
+![Barcode Rank Plot](./plots/DropletUtils_Plot.png)
+
+The plot above shows log-total UMI count vs. log-rank for each barcode:
 
 | Threshold | Estimated UMI Count |
 |-----------|-------------------|
@@ -75,6 +77,15 @@ with an FDR of 0.01 to limit false positives to 1%.
 
 ---
 
+### Detected Cells Plot
+
+![Detected Cells](./plots/DropletUtils%20Plot.png)
+
+Red dots represent barcodes classified as **real cells** after EmptyDrops filtering.
+Black dots represent empty droplets that were discarded.
+
+---
+
 ### Cell Filtering Results
 
 | Method | Cells Detected |
@@ -83,8 +94,7 @@ with an FDR of 0.01 to limit false positives to 1%.
 | DropletUtils EmptyDrops (threshold=200, FDR=0.01) | **74 cells** |
 | Total genes in filtered matrix | **57,774 genes** |
 
-> The EmptyDrops method retained **74 high-quality cell barcodes** from the
-> sub-sampled dataset. The final count matrix dimensions are **57,774 genes × 74 cells**.
+> The final count matrix dimensions are **57,774 genes × 74 cells**.
 
 ---
 
@@ -100,8 +110,6 @@ with an FDR of 0.01 to limit false positives to 1%.
 | `DropletUtils_features.tsv` | Gene features for EmptyDrops filtered matrix |
 | `filtered_barcodes.tsv` | Cell barcodes from DefaultDrops (CellRanger-style) filtering |
 | `filtered_features.tsv` | 57,774 gene features from DefaultDrops filtering |
-| `DropletUtils_Plot.png` | Barcode rank (knee) plot |
-| `DropletUtils Plot.png` | Detected cells plot — real cells highlighted in red |
 | `multiqc_report.zip` | Full MultiQC HTML report of STARsolo alignment statistics |
 
 ### `/plots`
