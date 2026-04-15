@@ -5,19 +5,17 @@ This repository contains a modular computational pipeline for the analysis of si
 
 The project is structured into three distinct phases:
 
-1. ## Upstream Processing: Sequence alignment and count matrix generation.
+1. Upstream Processing: Sequence alignment and count matrix generation.
 
-2. ## Downstream Analysis: Statistical quality control, dimensionality reduction, and unsupervised clustering.
+2. Downstream Analysis: Statistical quality control, dimensionality reduction, and unsupervised clustering.
 
-3. ## Data Management: Implementation of the AnnData object standard for scalable bioinformatics.
+3. Data Management: Implementation of the AnnData object standard for scalable bioinformatics.
 
 ## Repository Architecture
 .
-├── 01_preprocessing/        # STARsolo configuration and DropletUtils scripts
-├── 02_analysis/             # Scanpy-based exploratory data analysis and clustering
-├── 03_anndata_engineering/  # Notebooks detailing data structure manipulation
-├── documentation/           # Technical specifications and methodology
-├── environments/            # Conda environment specifications
+├── 01_scrna-preprocessing-10x/        # STARsolo configuration and DropletUtils scripts
+├── 02_abasic-scrna-tutorial/             # Scanpy-based exploratory data analysis and clustering
+├── 03_anndata-tutorial/  # Notebooks detailing data structure manipulation
 └── README.md
 
 ## Technical Methodology
