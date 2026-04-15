@@ -39,11 +39,9 @@ The AnnData object was saved to disk in `.h5ad` format (HDF5-based), which is th
 **5. Tutorial 2 (scverse)**
 The scverse AnnData tutorial was followed, reinforcing the same concepts with additional examples of views, concatenation, and working with large datasets.
 
-## Output Files
+## Output 
 
-| File | Description |
-|------|-------------|
-| `anndata_getting_started_completed.ipynb` | Completed notebook — AnnData docs tutorial |
+Notebooks: Saved with all executed outputs (.ipynb). 
 
 
 ## images
