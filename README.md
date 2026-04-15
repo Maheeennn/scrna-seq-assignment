@@ -17,7 +17,7 @@ The project is structured into three distinct phases:
 ```
 .
 ├── 01_scrna-preprocessing-10x/    # STARsolo configuration and DropletUtils scripts
-├── 02_abasic-scrna-tutorial/      # Scanpy-based exploratory data analysis and clustering
+├── 02_basic-scrna-tutorial/      # Scanpy-based exploratory data analysis and clustering
 ├── 03_anndata-tutorial/           # Notebooks detailing data structure manipulation
 └── README.md
 ```
